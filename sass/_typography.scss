@@ -70,9 +70,7 @@ dd {
 
 /*lists*/
 
-ul li, ol li {
-	padding: 3px;
-}
+// 
 
 /*PRE*/
 
@@ -103,14 +101,14 @@ Global Classes / Wordpress Specific
 	float: right;
 }
 
-img {
-	&.alignleft {
-		padding-right: 5px;
-	}
-	&.alignright {
-		padding-left: 5px;
-	}
-}
+// img {
+// 	&.alignleft {
+// 		padding-right: 5px;
+// 	}
+// 	&.alignright {
+// 		padding-left: 5px;
+// 	}
+// }
 
 .clear {
 	width: 100%;

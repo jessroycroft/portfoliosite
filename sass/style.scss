@@ -8,6 +8,7 @@
 */
 
 @import 'normalize';
+// @import 'grid';
 @import 'variables';
 @import 'typography';
 @import 'header';
@@ -27,7 +28,7 @@ img {
 
 body {
 	color: #333;
-	
+
 }
 
 .container {
@@ -35,15 +36,80 @@ body {
 	margin: 0 auto;
 }
 
-.content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+.tagline {
+	width: 50%;
+	margin: 0 auto;
+	padding: 5%;
 }
 
-.full {
-	width: 100%;
+ul {
+	list-style: none;
 }
+
+// =============================
+// PORTFOLIO/ALTERNATE GRIDS
+// =============================
+
+
+.portfolio-item {
+	display: flex;
+}
+.portfolio-item:nth-child(even) {
+	flex-direction: row-reverse;
+}
+.portfolio-text {
+	width: 50%;
+}
+
+.portfolio-image {
+	width: 50%;
+	background: $mediumgrey;
+}
+
+.grid-cell {
+	padding: 5%;
+}
+
+a.link-button {
+	font-size: 2rem;
+
+}
+.about img {
+	max-width: 400px;
+}
+
+.grid-row {
+	display: flex;
+}
+.grid-cell-image {
+	width: 50%;
+
+}
+.grid-cell-image ul {
+	display: flex;
+	flex-flow: row wrap;
+	li {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		font-size: 1.6rem;
+		padding: 2%;
+		width: 20%;
+	}
+	i {
+		font-size: 5rem;
+		padding-bottom: 20px;
+	}
+}
+
+.grid-cell-text {
+	width: 50%;
+}
+
+
+
+
+
 
 
 

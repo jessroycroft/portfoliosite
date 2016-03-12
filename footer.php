@@ -1,7 +1,11 @@
 <footer>
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+    <p>Coded by Jess Roycroft 2016</p>
   </div>
+  <?php wp_nav_menu( array(
+    'container' => false,
+    'theme_location' => 'social'
+  )); ?>
 </footer>
 
 <script>
