@@ -47,6 +47,8 @@ function hackeryou_styles(){
 	wp_enqueue_style('style', get_stylesheet_uri() );
 
 	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+	wp_enqueue_style('animate.css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css');
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_styles');
@@ -81,7 +83,23 @@ function hackeryou_scripts() {
     null, // version number
     true //load in footer
   );
-}
+
+  wp_enqueue_script(
+      'wow', //handle
+      'https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js', //source
+      false, //dependencies
+      null, // version number
+      true //load in footer
+    );
+    wp_enqueue_script(
+      'scripts', //handle
+      get_template_directory_uri() . '/js/main.min.js', //source
+      array( 'jquery', 'plugins', 'wow'  ), //dependencies
+      null, // version number
+      true //load in footer
+    );
+  }
+
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts');
 

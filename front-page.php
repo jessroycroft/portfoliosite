@@ -24,7 +24,7 @@
           <?php while(has_sub_field('skill_list')): ?>
             <?php $mainSkillName = get_sub_field('skill_name'); ?>
             <?php $mainSkillIcon = get_sub_field('skill_icon'); ?>
-            <li>
+            <li class="wow fadeInUp">
               <?php echo $mainSkillIcon ?>
               <?php echo $mainSkillName ?>
             </li>
@@ -32,7 +32,27 @@
           </ul>
         </div>
         <div class="grid-cell-text grid-cell">
+          <h3 class="skills-section-title">A few things that describe me and my work further.</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+
+          <ul class="skills-details">
+            <li>
+              <p class="skill-heading">A couple things</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, dignissimos.</p>
+            </li>
+            <li>
+              <p class="skill-heading">And more things as well.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, molestiae.</p>
+            </li>
+            <li>
+              <p class="skill-heading">Things and Things</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, dignissimos.</p>
+            </li>
+            <li>
+              <p class="skill-heading">Skills and Details</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, molestiae.</p>
+            </li>
+          </ul>
         </div>
       </div>
       
@@ -40,6 +60,7 @@
 
   <!-- Portfolio Section -->
     <section class="portfolio">
+      <h2>Work</h2>
         <?php $portfolioQuery = new WP_Query(array(
             'posts_per_page' => 3,
             'post_type' => 'portfolio'
@@ -51,7 +72,7 @@
               <!-- What we want to show goes here! -->
               <div class="portfolio-item">
                 <div class="portfolio-text grid-cell">
-                  <h2><?php the_title() ?></h2>
+                  <h3><?php the_title() ?></h3>
                   <p>
                     <?php the_content() ?>
                   </p>
@@ -64,14 +85,14 @@
                     
                     <!-- Button to see site live -->
                 
-                  <a href="<?php the_field('site_link') ?>" class="link-button">See it live</a>
+                  <a href="<?php the_field('site_link') ?>" class="link-button">See it live</a>/<a href="#">Read more</a>
                 </div>
                 
                 <!-- Mockups of website on devices -->
-                <div class="portfolio-image grid-cell">
+                <div class="portfolio-image">
                   <?php while(has_sub_field('image')): ?>
                   <?php $image = get_sub_field('image'); ?>
-                  <img src="<?php echo $image['sizes']['medium'] ?>" alt="">
+                  <img class="wow fadeInUp" src="<?php echo $image['sizes']['medium'] ?>" alt="">
                   <?php endwhile; ?> <!-- End image loop -->
                 </div>
               </div>
@@ -90,11 +111,14 @@
 
       <?php endwhile; // end the loop?>
       <section class="about">
-        <h3>About</h3>
-        <?php $aboutImage = get_field('about_image'); ?>
-        <img src="<?php echo $aboutImage['sizes']['large'] ?>" alt="">
-
-        <p><?php the_field('about_info') ?></p>
+        <h2>About</h2>
+        <div class="about-wrapper">
+          <?php $aboutImage = get_field('about_image'); ?>
+          <img src="<?php echo $aboutImage['sizes']['large'] ?>" alt="">
+          <div class="about-text">
+            <p><?php the_field('about_info') ?></p>
+          </div>
+        </div>
       </section>
     </div> <!-- /.content -->
 
