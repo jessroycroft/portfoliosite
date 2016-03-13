@@ -11,8 +11,10 @@
 // @import 'grid';
 @import 'variables';
 @import 'typography';
+@import 'angles';
 @import 'header';
 @import 'navigation';
+@import 'grids';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
@@ -37,8 +39,6 @@ section {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	// padding: 5%;
-
 }
 
 .tagline {
@@ -49,74 +49,6 @@ section {
 
 ul {
 	list-style: none;
-}
-
-// =============================
-// PORTFOLIO/ALTERNATE GRIDS
-// =============================
-
-
-.portfolio-item {
-	display: flex;
-	align-items: center;
-	padding: 20px;
-}
-.portfolio-item:nth-child(even) {
-	flex-direction: row-reverse;
-}
-.portfolio-text {
-	width: 50%;
-}
-
-.portfolio-image {
-	width: 50%;
-	img {
-		max-height: 500px;
-	}
-}
-
-.grid-cell {
-	padding: 5%;
-}
-
-a.link-button {
-	font-size: 2rem;
-
-}
-.about img {
-	max-width: 400px;
-}
-
-.grid-row {
-	display: flex;
-}
-.grid-cell-image {
-	width: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-}
-.grid-cell-image ul {
-	display: flex;
-	flex-flow: row wrap;
-	padding: 0;
-	li {
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		font-size: 1.6rem;
-		padding: 10% 5%;
-		width: 20%;
-	}
-	i {
-		font-size: 5rem;
-		padding-bottom: 20px;
-	}
-}
-
-.grid-cell-text {
-	width: 50%;
 }
 
 .skills-section-title {
@@ -151,11 +83,11 @@ a.link-button {
 .about-wrapper {
 	display: flex;
 	margin: 0 auto;
-	width: 60%;
+	width: 80%;
+	justify-content: space-around;
 	img {
-		max-width: 300px;
-		height: 200px;
-		padding-right: 50px;
+		max-width: 350px;
+		height: 400px;	
 	}
 }
 
@@ -170,54 +102,9 @@ a.link-button {
 	padding: 200px 0;
 }
 
-// .tagline::after, .tagline::before {
-// 		// background: $lightgrey;
-// 		content: '';
-// 		transform: skewY(-1.5deg);
-// 		transform-origin: 100%;
-// 		bottom: 0;
-// 		left: 0;
-// 		right: 0;
-// 		height: 50%;
-// 		position: absolute;
-// 		z-index: -1;
-// 	}
-
-.grid-row-1, .portfolio {
-	position: relative;
-	background: $lightgrey;
+.about {
+	padding: 10% 0;
 }
-
-.grid-row-1::before, .portfolio::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: -59px;
-	width: 100%;
-	height: 150px;
-	background: $lightgrey;
-	transform: skewY(-4.5deg);
-	-webkit-backface-visibility: hidden;
-	z-index: -10;
-}
-
-.grid-row-1::after, .portfolio::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	bottom: -59px;
-	width: 100%;
-	height: 150px;
-	background: $lightgrey;
-	transform: skewY(-4.5deg);
-	-webkit-backface-visibility: hidden;
-	z-index: -10;
-}
-
-// .about {
-// 	position: relative;
-// 	background: #e7e7e7;
-// }
 
 
 

@@ -1,0 +1,59 @@
+.portfolio-item {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+.portfolio-item:nth-child(even) {
+	flex-direction: row-reverse;
+}
+.portfolio-text {
+	width: 50%;
+}
+
+.portfolio-image {
+	width: 50%;
+	img {
+		max-height: 500px;
+	}
+}
+
+.grid-cell {
+	padding: 5%;
+}
+
+a.link-button {
+	font-size: 2rem;
+
+}
+
+.grid-row {
+	display: flex;
+}
+.grid-cell-image {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.grid-cell-image ul {
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0;
+	li {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		font-size: 1.6rem;
+		padding: 10% 5%;
+		width: 20%;
+	}
+	i {
+		font-size: 5rem;
+		padding-bottom: 20px;
+	}
+}
+
+.grid-cell-text {
+	width: 50%;
+}

@@ -15,7 +15,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque blanditiis quia nihil, tempore vitae inventore natus, consectetur tempora architecto. Laborum nisi natus iure, reprehenderit facilis? Dolores nulla, mollitia doloremque saepe.</p>
         </div>
         <div class="grid-cell-image">
-          <img src="images/triangle-background.jpg" alt="">
+          <img src="<?php bloginfo('template_directory'); ?>/images/triangle-background.jpg" alt="">
         </div>
       </div>
       <div class="grid-row grid-row-2">
@@ -93,7 +93,7 @@
                 <div class="portfolio-image">
                   <?php while(has_sub_field('image')): ?>
                   <?php $image = get_sub_field('image'); ?>
-                  <img class="wow fadeInUp" src="<?php echo $image['sizes']['medium'] ?>" alt="">
+                  <img class="wow fadeInUp" src="<?php echo $image['sizes']['large'] ?>" alt="">
                   <?php endwhile; ?> <!-- End image loop -->
                 </div>
               </div>

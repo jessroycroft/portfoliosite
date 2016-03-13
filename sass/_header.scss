@@ -7,6 +7,8 @@ header {
 	margin: 0;
 	position: relative;
 	z-index: 1;
+  -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+  clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
 	h1 {
 		padding-top: 50vh;
 	}
