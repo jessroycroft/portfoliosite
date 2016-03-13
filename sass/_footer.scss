@@ -1,3 +1,29 @@
 footer {
-	clear: both;
+	background: $lightgrey;
+	display: flex;
+	flex-direction: column;
+	h2 {
+		color: $darkgrey;
+	}
+	p {
+		color: $darkgrey;
+	}
+	img {
+		display: none;
+	}
+}
+
+#menu-footer-menu {
+	margin: 0 auto;
+}
+
+footer .footer-container {
+	margin: 0;
+}
+
+input[type='submit'] {
+	background: $apple;
+	border: none;
+	font-family: 'Lato';
+	color: $white;
 }

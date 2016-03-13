@@ -1,11 +1,16 @@
 <footer>
-  <div class="container">
-    <p>Coded by Jess Roycroft 2016</p>
-  </div>
+	<h2>Let's Talk <span>Websites</span></h2>
+  <div class="container footer-container">
+  	<!-- Grabs contact form -->
+	  <?php if( get_field('contact_form') ):
+	       echo do_shortcode(get_field('contact_form') );
+	  endif; ?>
   <?php wp_nav_menu( array(
     'container' => false,
     'theme_location' => 'social'
   )); ?>
+    <p>Coded by Jess Roycroft 2016</p>
+  </div>
 </footer>
 
 <script>

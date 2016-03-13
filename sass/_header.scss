@@ -1,6 +1,13 @@
 header {
 	height: 100vh;
-	background: $darkgrey;
+	background-image: url('images/crystals.jpg');
+	// background-size: cover;
+	background-position: 42% 61%;
+	background-attachment: fixed;
 	margin: 0;
-	padding-top: 50vh;
+	position: relative;
+	z-index: 1;
+	h1 {
+		padding-top: 50vh;
+	}
 }

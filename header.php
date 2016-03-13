@@ -10,6 +10,7 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
   <link rel="stylesheet" href="animate.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
 
   <!-- stylesheets should be enqueued in functions.php -->
   <?php wp_head(); ?>
@@ -25,7 +26,7 @@
         <?php bloginfo( 'name' ); ?>
       </a>
     </h1>
-    <p class='tagline'>Front-end developer.</p>
+    <p class='header-tagline'>Front-end developer.</p>
 
     <?php wp_nav_menu( array(
       'container' => false,
