@@ -1,12 +1,12 @@
 footer {
-	background: $lightgrey;
+	background: darken($vulcan, 2%);
 	display: flex;
 	flex-direction: column;
 	h2 {
-		color: $darkgrey;
+		color: $white;
 	}
 	p {
-		color: $darkgrey;
+		color: $white;
 	}
 	img {
 		display: none;
@@ -22,14 +22,15 @@ form {
 	float: right;
 	width: 50%;
 	input, textarea {
-		background: $lightgrey;
+		background: lighten($vulcan, 2%);
 		border: none;
 		padding: 10px;
-		border-left: 2px solid $darkgrey;
+		border-left: 2px solid $curiousblue;
 		-webkit-appearance: none;
+		color: $rose;
 		&:focus {
 			outline: none;
-			border-bottom: 1px solid $darkgrey;
+			border-bottom: 1px solid $curiousblue;
 		}
 	}
 }
@@ -60,7 +61,7 @@ form {
 }
 
 input[type='submit'] {
-	background: $wine;
+	background: $curiousblue;
 	border: none;
 	padding: 10px 20px;
 	font-family: 'Lato';

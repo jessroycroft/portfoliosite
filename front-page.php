@@ -11,11 +11,11 @@
     <section class="skills">
       <div class="grid-row grid-row-1">
         <div class="grid-cell-text grid-cell">
-          <h2>I make <span>cool</span> things.</h2>
+          <h3 class="emphasis-heading">I make <span>cool</span> things.</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque blanditiis quia nihil, tempore vitae inventore natus, consectetur tempora architecto. Laborum nisi natus iure, reprehenderit facilis? Dolores nulla, mollitia doloremque saepe.</p>
         </div>
         <div class="grid-cell-image">
-          <img src="<?php bloginfo('template_directory'); ?>/images/triangle-background.jpg" alt="">
+          <!-- <img src="<?php bloginfo('template_directory'); ?>/images/triangle-background.jpg" alt=""> -->
         </div>
       </div>
       <div class="grid-row grid-row-2">
@@ -26,7 +26,7 @@
             <?php $mainSkillIcon = get_sub_field('skill_icon'); ?>
             <li class="wow fadeInUp">
               <?php echo $mainSkillIcon ?>
-              <?php echo $mainSkillName ?>
+              <p class='skill-icon-name'><?php echo $mainSkillName ?></p>
             </li>
           <?php endwhile; ?>
           </ul>

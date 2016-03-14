@@ -29,7 +29,7 @@ img {
 }
 
 body {
-	color: #333;
+	background: $vulcan;
 }
 
 section {
@@ -39,6 +39,7 @@ section {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 5%;
 }
 
 .tagline {

@@ -10,6 +10,7 @@ h1 {
 	font-weight: 800;
 	padding-left: 10%;
 	margin: 0;
+	color: $rose;
 }
 
 h2 {
@@ -18,13 +19,18 @@ h2 {
 	font-weight: 800;
 	position: relative;
 	top: -25px;
+	color: $cadillac;
 }
 
 h3 {
 	font-family: 'Open Sans';
 	font-weight: 800;
 	font-size: 3rem;
-	color: $darkgrey;
+	color: $rose;
+}
+
+h3.emphasis-heading {
+	font-size: 4rem;
 }
 p {
 	line-height: 1.5;
@@ -33,31 +39,41 @@ p {
 	// font-style: italic;
 	font-weight: 300;
 	// letter-spacing: 0.3rem;
-	color: $mediumgrey;
+	color: darken($rose, 3%);
 }
 
 p.header-tagline {
 	padding-left: 10%;
 	font-family: 'Open Sans';
 	font-size: 3rem;
-	color: $wine;
+	color: $curiousblue;
 }
 
 p.skill-heading {
 	font-family: 'Open Sans';
+	color: $rose;
+	font-size: 1.5rem;
+	letter-spacing: 0.1rem;
 }
 
+p.skill-icon-name {
+	font-family: 'Open Sans';
+}
 span {
-	color: $wine;
+	color: $cadillac;
 }
 
 a {
 	text-decoration: none;
-	color: $wine;
+	color: $curiousblue;
 }
 
 a.header-link {
 	color: $mediumgrey;
+}
+
+i {
+	color: $curiousblue;
 }
 
 

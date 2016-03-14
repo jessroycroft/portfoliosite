@@ -1,9 +1,10 @@
 header {
-	height: 100vh;
-	background-image: url('images/crystals.jpg');
+	height: 105vh;
+	background: darken($vulcan, 6%);
+	// background-image: url('images/crystals.jpg');
 	// background-size: cover;
-	background-position: 42% 61%;
-	background-attachment: fixed;
+	// background-position: 42% 61%;
+	// background-attachment: fixed;
 	margin: 0;
 	position: relative;
 	z-index: 1;
@@ -37,4 +38,9 @@ header {
 
 .fade-in.tagline-fade-in {
 	animation-delay: 2s;
+}
+
+.fade-in.emphasis-fade-in {
+	animation-delay: 4s;
+	color: $curiousblue;
 }
