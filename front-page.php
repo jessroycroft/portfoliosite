@@ -12,7 +12,8 @@
       <div class="grid-row grid-row-1">
         <div class="grid-cell-text grid-cell">
           <h3 class="emphasis-heading">I make <span>cool</span> things.</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque blanditiis quia nihil, tempore vitae inventore natus, consectetur tempora architecto. Laborum nisi natus iure, reprehenderit facilis? Dolores nulla, mollitia doloremque saepe.</p>
+          <p>And I make them on the internet!</p> 
+          <p>I like to build websites that are fun, beautiful, and responsive, so that they look good whether you're being a productive human on a laptop or dropping your phone on your face when you're nighttime scrolling.</p>
         </div>
         <div class="grid-cell-image">
           <!-- <img src="<?php bloginfo('template_directory'); ?>/images/triangle-background.jpg" alt=""> -->
@@ -32,25 +33,26 @@
           </ul>
         </div>
         <div class="grid-cell-text grid-cell">
-          <h3 class="skills-section-title">A few things that describe me and my <span>work</span> further.</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          <h3 class="skills-section-title">How I get things <span>done</span>.</h3>
+          <p>This is a little about the skills I have, the tools I use, and how I use them.</p>
 
           <ul class="skills-details">
             <li>
-              <p class="skill-heading">A couple things</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, dignissimos.</p>
+              <p class="skill-heading">Evolution</p>
+              <p>Web development is an ever-changing industry, and that's what makes it exciting. Keeping up to date with modern best practices and new tools and technologies is an ongoing process, and one I'm committed to.</p>
             </li>
             <li>
-              <p class="skill-heading">And more things as well.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, molestiae.</p>
+              <p class="skill-heading">Collaboration</p>
+              <p>We are all standing on the shoulders of giants, and I believe that collaboration and open-sourcing help us combine and develop skills far beyond what we could achieve alone.</p>
             </li>
             <li>
-              <p class="skill-heading">Things and Things</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, dignissimos.</p>
+              <p class="skill-heading">Efficient Workflow</p>
+              <p>I use tools like Gulp, Sass, and Git on the command line to automate workflow and maximize efficiency, so that I can spend more time coding the things I love.</p>
             </li>
+            
             <li>
-              <p class="skill-heading">Skills and Details</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, molestiae.</p>
+              <p class="skill-heading">Responsive Design</p>
+              <p>Every site has to look great from mobile to desktop - and everything in between.</p>
             </li>
           </ul>
         </div>
