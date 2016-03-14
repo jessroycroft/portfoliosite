@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
   <link rel="stylesheet" href="animate.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:800,300' rel='stylesheet' type='text/css'>
 
   <!-- stylesheets should be enqueued in functions.php -->
   <?php wp_head(); ?>
@@ -21,12 +22,12 @@
 
 <header>
   <div class="container">
-    <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-      </a>
-    </h1>
-    <p class='header-tagline'>Front-end developer.</p>
+    <div class="fade-in title-fade-in">
+      <h1><?php bloginfo( 'name' ); ?></h1>
+    </div>
+    <div class="fade-in tagline-fade-in">
+      <p class='header-tagline'>Front-end developer.</p>
+    </div>
 
     <?php wp_nav_menu( array(
       'container' => false,

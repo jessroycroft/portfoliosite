@@ -5,24 +5,24 @@ html {
 /* paragraphs */
 
 h1 {
-	font-size: 8rem;
-	font-family: 'Lato';
-	font-weight: 700;
+	font-size: 10rem;
+	font-family: 'Open Sans';
+	font-weight: 800;
+	padding-left: 10%;
 	margin: 0;
 }
 
 h2 {
+	font-family: 'Open Sans';
 	font-size: 4rem;
-	text-transform: uppercase;
-	font-weight: 900;
+	font-weight: 800;
 	position: relative;
 	top: -25px;
-
 }
 
 h3 {
-	font-family: 'Lato';
-	font-weight: 900;
+	font-family: 'Open Sans';
+	font-weight: 800;
 	font-size: 3rem;
 	color: $darkgrey;
 }
@@ -36,8 +36,15 @@ p {
 	color: $mediumgrey;
 }
 
-p.skill-heading, p.tagline {
-	font-family: 'Lato';
+p.header-tagline {
+	padding-left: 10%;
+	font-family: 'Open Sans';
+	font-size: 3rem;
+	color: $wine;
+}
+
+p.skill-heading {
+	font-family: 'Open Sans';
 }
 
 span {
@@ -47,6 +54,10 @@ span {
 a {
 	text-decoration: none;
 	color: $wine;
+}
+
+a.header-link {
+	color: $mediumgrey;
 }
 
 

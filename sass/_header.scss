@@ -7,9 +7,34 @@ header {
 	margin: 0;
 	position: relative;
 	z-index: 1;
-  -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
   clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
 	h1 {
 		padding-top: 50vh;
 	}
+}
+
+// Animates the header to fade in on load
+
+@keyframes fadeIn { 
+	from { 
+		opacity: 0;
+	}
+	to {
+		opacity:1;
+	}
+}
+
+.fade-in {
+	opacity:0;
+	animation:fadeIn ease-in 1;
+	animation-fill-mode:forwards;
+	animation-duration: 1s;
+}
+ 
+.fade-in.title-fade-in {
+	animation-delay: 1s;
+}
+
+.fade-in.tagline-fade-in {
+	animation-delay: 2s;
 }

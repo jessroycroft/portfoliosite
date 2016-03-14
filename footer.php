@@ -1,6 +1,6 @@
 <footer>
 	<!-- <div class="container"> -->
-	<h2>Let's Talk <span>Websites</span></h2>
+	<h2>Let's talk about <span>websites</span></h2>
   <div class="footer-container clearfix">
 	  <div class="footer-text">
 	  	<p>I'd love to chat about how we can work together. Drop me a line and we can do that!</p>
