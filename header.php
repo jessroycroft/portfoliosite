@@ -6,12 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:300,300italic|Roboto:100,300,700,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,700,900' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
   <link rel="stylesheet" href="animate.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:800,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:800,400,300' rel='stylesheet' type='text/css'>
 
   <!-- stylesheets should be enqueued in functions.php -->
   <?php wp_head(); ?>
@@ -29,9 +29,21 @@
       <p class='header-tagline'>Front-end developer.</p>
     </div>
 
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_location' => 'primary'
-    )); ?>
+    <div class="content">
+      <button class="menu-toggle"><i class="fa fa-bars"></i></button>
+       <!-- Full-screen nav -->
+       <div class="full-menu">
+         <!-- <div class="full-menu--middle"> -->
+           <button class="menu-toggle menu-toggle-close">X</button>
+          <ul class="main-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul><!-- /.main nav -->
+        <!-- </div> --><!-- /.full menu middle -->
+      </div><!-- /.full menu -->
+<!--       <div class="content"> -->
+    </div><!-- /.content -->
   </div> <!-- /.container -->
 </header><!--/.header-->

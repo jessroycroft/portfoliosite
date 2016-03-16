@@ -1,19 +1,13 @@
 <?php get_header();  ?>
 
-<div class="main">
  <!--  <div class="container"> -->
+  
 
-    <div class="content">
-    <section class="tagline">
-      <p><?php the_field('about_tagline') ?></p>
-    </section>
-    
     <section class="skills">
       <div class="grid-row grid-row-1">
         <div class="grid-cell-text grid-cell">
-          <h3 class="emphasis-heading">I make <span>cool</span> things.</h3>
-          <p>And I make them on the internet!</p> 
-          <p>I like to build websites that are fun, beautiful, and responsive, so that they look good whether you're being a productive human on a laptop or dropping your phone on your face when you're nighttime scrolling.</p>
+          <h3 class="emphasis-heading">I like to make <span>cool</span> things!</h3>
+          <p>I love putting the pieces of a project together and watching as a blank screen turns into something beautiful and fun. Searching out new ways to make that happen is exciting - I like to be on the lookout to learn new skills and techniques to make sites that are clean, clear, and fully responsive, so they look good when you're being a productive human on a laptop or dropping your phone on your face in the middle of the night.</p>
         </div>
         <div class="grid-cell-image">
           <!-- <img src="<?php bloginfo('template_directory'); ?>/images/triangle-background.jpg" alt=""> -->
@@ -33,37 +27,37 @@
           </ul>
         </div>
         <div class="grid-cell-text grid-cell">
-          <h3 class="skills-section-title">How I get things <span>done</span>.</h3>
-          <p>This is a little about the skills I have, the tools I use, and how I use them.</p>
+          <h3 class="skills-section-title">This is what I <span>make</span> them with.</h3>
+          <p>HTML5, CSS3, and jQuery are my jam, but I'm familiar with Javascript fundamentals and Wordpress theme development, and am excited to learn more. I use Git on the command line for collaboration and version control, and streamline my workflow with Sass and Gulp so that I can spend more time coding the things I love.</p>
 
-          <ul class="skills-details">
+<!--           <ul class="skills-details">
             <li>
               <p class="skill-heading">Evolution</p>
-              <p>Web development is an ever-changing industry, and that's what makes it exciting. Keeping up to date with modern best practices and new tools and technologies is an ongoing process, and one I'm committed to.</p>
+              <p>Keeping up to date with modern best practices and new tools and technologies is an ongoing process, and I'm excited to learn .</p>
             </li>
             <li>
               <p class="skill-heading">Collaboration</p>
               <p>We are all standing on the shoulders of giants, and I believe that collaboration and open-sourcing help us combine and develop skills far beyond what we could achieve alone.</p>
             </li>
             <li>
-              <p class="skill-heading">Efficient Workflow</p>
-              <p>I use tools like Gulp, Sass, and Git on the command line to automate workflow and maximize efficiency, so that I can spend more time coding the things I love.</p>
+              <p class="skill-heading">Workflow</p>
+              <p>Tools like Gulp, Sass, and Git on the command line help me automate workflow so that I can spend more time coding the things I love.</p>
             </li>
             
             <li>
               <p class="skill-heading">Responsive Design</p>
               <p>Every site has to look great from mobile to desktop - and everything in between.</p>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
       
     </section>
 
   <!-- Portfolio Section -->
-    <section class="portfolio">
+    <section class="portfolio" id="work">
       <div class="container">
-      <h2>Work</h2>
+      <h2>I made <span>these</span>!</h2>
         <?php $portfolioQuery = new WP_Query(array(
             'posts_per_page' => 3,
             'post_type' => 'portfolio'
@@ -79,23 +73,23 @@
                   <p>
                     <?php the_content() ?>
                   </p>
-                      <ul class="skill-list">
-                        <?php while(has_sub_field('skills_used')): ?>
-                        <?php $skill = get_sub_field('skill_name'); ?>
-                        <?php echo $skill ?>
-                        <?php endwhile; ?>
-                      </ul>
+                  <ul class="skill-list">
+                    <?php while(has_sub_field('skills_used')): ?>
+                    <?php $skill = get_sub_field('skill_name'); ?>
+                    <?php echo $skill ?>
+                    <?php endwhile; ?>
+                  </ul>
                     
                     <!-- Button to see site live -->
                 
-                  <a href="<?php the_field('site_link') ?>" class="link-button">See it live</a>/<a href="#">Read more</a>
+                  <button><a href="<?php the_field('site_link') ?>" class="link-button">See it live</a></button>
                 </div>
                 
                 <!-- Mockups of website on devices -->
                 <div class="portfolio-image">
                   <?php while(has_sub_field('image')): ?>
                   <?php $image = get_sub_field('image'); ?>
-                  <img class="wow fadeInUp" src="<?php echo $image['sizes']['large'] ?>" alt="">
+                  <img src="<?php echo $image['sizes']['large'] ?>" alt="">
                   <?php endwhile; ?> <!-- End image loop -->
                 </div>
               </div>
@@ -113,9 +107,9 @@
         <?php the_content(); ?>
 
       <?php endwhile; // end the loop?>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
-          <h2>About</h2>
+          <h2>About <span>me</span>.</h2>
           <div class="about-wrapper">
             <?php $aboutImage = get_field('about_image'); ?>
             <img src="<?php echo $aboutImage['sizes']['large'] ?>" alt="">

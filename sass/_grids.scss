@@ -1,6 +1,7 @@
 .portfolio-item {
 	display: flex;
 	align-items: center;
+
 	padding: 20px;
 }
 .portfolio-item:nth-child(even) {
@@ -56,8 +57,35 @@ a.link-button {
 }
 
 .grid-cell-text {
-	width: 55%;
-	li {
-		padding: 2% 5%;
+	width: 50%;
+}
+
+button {
+	appearance: none;
+	padding: 10px 20px;
+	border: 2px solid $curiousblue;
+	font-family: 'Open Sans';
+	background: none;
+	font-size: 2rem;
+	font-weight: 400;
+	transition: all 0.5s ease;
+	a {
+		color: $curiousblue;
 	}
+	&:hover {
+		background:$curiousblue;
+		a {
+			color: white;
+		}
+	}
+}
+
+.skill-list {
+	display: flex;
+	flex-flow: row wrap;
+}
+.skill-list li {
+	padding: 0;
+	margin-right: 5px;
+	color: $capecod;
 }

@@ -1,9 +1,9 @@
-<footer>
+<footer id="contact">
 	<!-- <div class="container"> -->
-	<h2>Let's talk about <span>websites</span></h2>
+	<h2>Let's talk about <span>websites</span>!</h2>
   <div class="footer-container clearfix">
 	  <div class="footer-text">
-	  	<p>I'd love to chat about how we can work together. Drop me a line and we can do that!</p>
+	  	<p>Specifally, working on them together, but we can talk about other things too. Drop me a line and we can talk to each other using the power of the internet. We can drink coffee like people do. It will be very casual and cool, I'm breezy.</p>
 	  	<p class="contact-info">email: <span>jess[at]jessroycroft.com</span></p>
 	  	<p class="contact-info">twitter: <span>@jessroycroft</span></p>
 	  </div>
