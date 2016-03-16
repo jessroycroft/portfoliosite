@@ -3,11 +3,18 @@ header {
 	background: darken($capecod, 10%);
 	margin: 0;
 	position: relative;
-	z-index: 1;
+	z-index: 2000;
   clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
 	h1 {
 		padding-top: 50vh;
+		@media (max-width: 658px) {
+			padding-top: 40vh;
+		}
+		@media (max-width: 400px) {
+		padding-top: 35vh;
+		}
 	}
+	
 }
 
 // Animates the header to fade in on load

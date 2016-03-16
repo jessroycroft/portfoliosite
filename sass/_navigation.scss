@@ -3,6 +3,10 @@
 	font-size: 7rem;
 	a {
 		color: white;
+		transition: all 0.3s ease;
+		&:hover {
+			color: $curiousblue;
+		}
 	}
 }
 
@@ -15,11 +19,15 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: 50%;
   opacity: 0;
   background-color: $capecod;
   transform: scale(0.85);
   transition: all 0.5s ease-in-out;
+  @media (max-width: 675px) {
+  	width: 100%;
+  	justify-content: center;
+  }
 }
 
 .full-menu-open {

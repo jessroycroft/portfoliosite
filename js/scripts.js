@@ -7,5 +7,6 @@ $(function(){
 	  $('li').on('click', function(){
 	  	$('.full-menu').removeClass('full-menu-open');
 	  })
+	  $('a').smoothScroll();
 	})
 });

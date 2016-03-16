@@ -1,25 +1,42 @@
+
+
 .portfolio-item {
 	display: flex;
 	align-items: center;
-
 	padding: 20px;
+	@media (max-width: 907px) {
+		flex-direction: column;
+	}
 }
 .portfolio-item:nth-child(even) {
 	flex-direction: row-reverse;
+	@media (max-width: 907px) {
+		flex-direction: column;
+	}
 }
 .portfolio-text {
 	width: 50%;
+	@media (max-width: 907px) {
+		width: 100%;
+		order: 2;
+	}
 }
 
 .portfolio-image {
 	width: 50%;
 	img {
-		max-height: 500px;
+		max-height: 400px;
+		max-width: 100%;
+	}
+	@media (max-width: 907px) {
+		width: 100%;
+		max-width: 400px;
+		order: 1;
 	}
 }
 
 .grid-cell {
-	padding: 5%;
+	padding: 5% 5% 0 5%;
 }
 
 a.link-button {
@@ -29,35 +46,68 @@ a.link-button {
 
 .grid-row {
 	display: flex;
+	@media (max-width: 823px) {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 }
 .grid-cell-image {
 	width: 45%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	@media (max-width: 823px) {
+		width: 100%;
+	}
 
 }
 .grid-cell-image ul {
 	display: flex;
 	flex-flow: row wrap;
-	padding: 0;
+	padding-top: 50px;
+	@media (max-width: 823px) {
+		padding: 0 0 40px 0;
+	}
 	li {
 		text-align: center;
 		display: flex;
 		flex-direction: column;
-		// font-size: 1.rem;
-		padding: 5%;
 		width: 20%;
+		@media (max-width: 1147px) {
+			width: 25%;
+		}
+		@media (max-width: 913px) {
+			p {
+				font-size: 1.2rem;
+			}
+		}
+		@media (max-width: 823px) {
+			width: 20%;
+		}
 	}
 	i {
 		font-size: 7rem;
 		padding-bottom: 20px;
 		text-align: center;
+		@media (max-width: 984px) {
+			font-size: 5rem;
+		}
 	}
 }
 
-.grid-cell-text {
+.skills-section-title {
+	@media (max-width: 743px) {
+		order: 1;
+	}
+}
+
+.grid-cell.grid-cell-text {
 	width: 50%;
+	padding-left: 7%;
+	@media (max-width: 823px) {
+		width: 100%;
+	}
 }
 
 button {
@@ -88,4 +138,23 @@ button {
 	padding: 0;
 	margin-right: 5px;
 	color: $capecod;
+}
+
+.first-blurb {
+	@media (max-width: 984px) {
+		width: 60%;
+	}
+}
+
+@media (max-width: 823px) {
+	.skill-cell {
+		order: 2;
+	}
+	.main-skills-list {
+		padding: 0;
+		margin: 0;
+	}
+	.text-cell {
+		margin: 0;
+	}
 }

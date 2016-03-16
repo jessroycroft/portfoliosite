@@ -2,22 +2,24 @@
 	<!-- <div class="container"> -->
 	<h2>Let's talk about <span>websites</span>!</h2>
   <div class="footer-container clearfix">
+  	<div class="grid-row">
 	  <div class="footer-text">
-	  	<p>Specifally, working on them together, but we can talk about other things too. Drop me a line and we can talk to each other using the power of the internet. We can drink coffee like people do. It will be very casual and cool, I'm breezy.</p>
+	  	<p>Specifally, working on them together, but we can talk about other things too. Give me a shout!</p>
 	  	<p class="contact-info">email: <span>jess[at]jessroycroft.com</span></p>
-	  	<p class="contact-info">twitter: <span>@jessroycroft</span></p>
+	  	<p class="contact-info">twitter: <a href="http://twitter.com/jessroycroft">@jessroycroft</a></p>
 	  </div>
+	  <div class="form-container">
   	<!-- Grabs contact form -->
-	  <?php if( get_field('contact_form') ):
+	  	<?php if( get_field('contact_form') ):
 	       echo do_shortcode(get_field('contact_form') );
 	  endif; ?>
-  <?php wp_nav_menu( array(
-    'container' => false,
-    'theme_location' => 'social'
-  )); ?>
-    <p>Coded by Jess Roycroft 2016</p>
+	  </div>
+	  </div>
+
+    <p class="most-footer">Coded by Jess Roycroft 2016</p>
   </div>
 <!--   </div> -->
+<?php get_footer() ?>
 </footer>
 
 <script>

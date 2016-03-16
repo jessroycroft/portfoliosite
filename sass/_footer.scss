@@ -1,21 +1,31 @@
 footer {
 	background: lighten($blackpearl, 85%);
-	display: flex;
-	flex-direction: column;
-	padding: 0 5%;
+	padding: 0 7%;
 	img {
 		display: none;
 	}
 }
 
-#menu-footer-menu {
-	margin: 0 auto;
-	clear: both;
-}
+// #menu-footer-menu li {
+// 	// margin: 0 auto;
+// 	clear: both;
 
-form {
-	float: right;
+// }
+.form-container {
 	width: 50%;
+	@media (max-width: 823px) {
+		align-self: flex-start;
+	}
+	@media (max-width: 700px) {
+		width: 80%;
+	}
+	@media (max-width: 320px) {
+		width: 100%;
+	}
+}
+form {
+	width: 100%;
+	// max-width: 393px;
 	input, textarea {
 		background: $white;
 		border: none;
@@ -35,7 +45,7 @@ form {
 // 	margin: 0;
 // }
 .your-name::before, .your-email::before, .your-subject::before, .your-message::before {
-	font-family: 'Lato';
+	font-family: 'Open Sans';
 	font-weight: 900;
 	padding-right: 10px;
 }
@@ -69,14 +79,24 @@ input[type='submit'] {
 .footer-text {
 	float: left;
 	width: 50%;
-	padding: 5%;
+	padding: 0 5% 0 0;
+	@media (max-width: 823px) {
+		width: 100%;
+	}
 }
 
 .contact-info {
-	font-family: 'Lato';
+	font-family: 'Open Sans';
 	font-weight: 400;
 }
 
-textarea {
+form input, form textarea {
 	width: 100%;
+}
+
+.most-footer {
+	clear: both;
+	font-size: 1.2rem;
+	text-align: center;
+	padding-top: 5%;
 }

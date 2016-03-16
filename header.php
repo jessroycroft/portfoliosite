@@ -28,22 +28,23 @@
     <div class="fade-in tagline-fade-in">
       <p class='header-tagline'>Front-end developer.</p>
     </div>
-
-    <div class="content">
-      <button class="menu-toggle"><i class="fa fa-bars"></i></button>
-       <!-- Full-screen nav -->
-       <div class="full-menu">
-         <!-- <div class="full-menu--middle"> -->
-           <button class="menu-toggle menu-toggle-close">X</button>
-          <ul class="main-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul><!-- /.main nav -->
-        <!-- </div> --><!-- /.full menu middle -->
-      </div><!-- /.full menu -->
+</div>
+<button class="menu-toggle"><i class="fa fa-bars"></i></button>
+ <!-- Full-screen nav -->
+ <div class="full-menu">
+   <!-- <div class="full-menu--middle"> -->
+     <button class="menu-toggle menu-toggle-close">X</button>
+    <ul class="main-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul><!-- /.main nav -->
+  <!-- </div> --><!-- /.full menu middle -->
+</div> 
+   <!--  <div class="content"> -->
+<!-- /.full menu
 <!--       <div class="content"> -->
-    </div><!-- /.content -->
-  </div> <!-- /.container -->
+  <!--   </div> --><!-- /.content -->
+  <!-- </div> --> <!-- /.container -->
 </header><!--/.header-->
